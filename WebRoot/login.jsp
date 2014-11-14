@@ -5,7 +5,7 @@
 		<title>loginFrame</title>
 	</head>
 	<body><br>
-	<table background="image/2.png" border="1" align="center" width="90%"><tr><td><div style="width:100%;height:100%;overflow:auto">
+	<table border="1" align="center" width="90%"><tr><td><div style="width:100%;height:100%;overflow:auto">
 	<br><br><br><br><br><br><br><br><br><br><br>
 	 <center><h1><font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -13,9 +13,9 @@
 	 <br> <br> <br> 
 		<table align="center">
 		
-		<html:form action="/login" method="post">   
-		    <tr><td>&nbsp;&nbsp;用户名: <html:text property="id"/><html:errors property="id"/></td>
-		        <td>&nbsp;&nbsp;密码: <html:password property="password"/><html:errors property="password"/>&nbsp;&nbsp;</td>
+		<form action="login.action" method="post">   
+		    <tr><td>&nbsp;&nbsp;用户名: <input type="text" name="username"/></td>
+		        <td>&nbsp;&nbsp;密码: <input type="text" name="password"/></td>
 		    </tr>
 		    <tr><td>&nbsp;&nbsp;&nbsp;
 			       <input type="radio" name="type" value="student">学生
@@ -26,7 +26,7 @@
 			        <input type="submit" value="登陆"/>&nbsp;&nbsp;<input type="reset" value="取消"/>
 			    </td>
 			</tr>       
-		</html:form>
+		<form>
 	    </table>
 	    <br><br><br><br><br><br><hr>
 	    <table align="center">
